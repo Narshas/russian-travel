@@ -1,0 +1,212 @@
+.root {
+    background-color: #424447;
+    /* подключить шрифты */
+    /* font-family:  */
+}
+
+.text {
+    color: #ffffff;
+}
+
+/* ----------- */
+.header {}
+
+.header__logo {
+    position: absolute;
+    width: 176px;
+    height: 52px;
+    top: 28px;
+    left: 48px;
+}
+
+.header__title {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    /* 1.042 */
+    text-align: center;
+}
+
+.header__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* 1.2 */
+    text-align: center;
+}
+
+.header__lang {
+    list-style: none;
+}
+
+.header__lang-link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    /* 1.17 */
+    /* text-align: right; */
+}
+
+.header__lang:first-child {
+    text-decoration: underline;
+}
+
+.header__caption {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    /* 1.4 */
+    text-transform: uppercase;
+}
+
+/* ----------- */
+.description__title {
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;
+    /* 1.0741 */
+}
+
+.description__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.08px;
+    /* 1.63 */
+}
+
+.description__list {
+    list-style: none;
+}
+
+.description__line {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* 1.5 */
+}
+
+.description__span-accent {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    /* 1.5 */
+}
+
+/* ----------- */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* ----------- */
+.places {}
+
+.cards {
+    list-style: none;
+}
+
+.cards__title {}
+
+.cards__url-heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    /* 1.0 */
+}
+
+.cards__url {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* 1.22 */
+
+}
+
+.cards__text {}
+
+.cards__paragraph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29.34px;
+    /* 1.63 */
+}
+
+/* ----------- */
+.teaser {}
+
+.teaser__title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    /* 1.06 */
+    text-align: center;
+}
+
+.teaser__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* 1.22 */
+    text-align: center;
+
+}
+
+/* ----------- */
+
+.footer {}
+
+.footer__menu {
+    list-style: none;
+}
+
+.footer__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* 1.125 */
+}
+
+.copyright-info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* 1.143 */
+    text-align: right;
+}
+
+/* -----gues who------ */
+
+@media screen and (max-width: 1280px) {
+    /* макет 1024 */
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    /* макет 768 */
+    .header__logo {
+        position: absolute;
+        width: 142px;
+        height: 42px;
+        top: 16px;
+        left: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* макет 320 */
+}
+
+@media screen and (max-width: 425px) {
+
+    /* а какой макет использовать тут */
+    .header__logo {
+        position: absolute;
+        width: 142px;
+        height: 42px;
+        top: 16px;
+        left: 16px;
+    }
+}
