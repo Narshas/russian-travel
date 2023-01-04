@@ -1,7 +1,8 @@
 .root {
-    background-color: #424447;
-    /* подключить шрифты */
-    /* font-family:  */
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #2A2C2F;
+    font-family: 'Inter';
 }
 
 .text {
@@ -9,7 +10,12 @@
 }
 
 /* ----------- */
-.header {}
+.header {
+    margin: 0 auto;
+    max-width: 1184px;
+    padding: 28px 0 64px;
+    display: flex;
+}
 
 .header__logo {
     position: absolute;
@@ -19,189 +25,238 @@
     left: 48px;
 }
 
-.header__title {
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 100px;
-    /* 1.042 */
-    text-align: center;
-}
-
-.header__subtitle {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    /* 1.2 */
-    text-align: center;
-}
-
-.header__lang {
+.header__lang-links {
     list-style: none;
 }
 
 .header__lang-link {
     font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
-    /* 1.17 */
-    /* text-align: right; */
+    line-height: 1.17;
+    text-align: right;
 }
 
-.header__lang:first-child {
+.header__lang-links:first-child {
     text-decoration: underline;
 }
 
-.header__caption {
+/* ----------- */
+.lead {
+    margin: 0 auto;
+    max-width: 984px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lead__title {
+    margin: 0 auto 32px;
+    max-width: 720px;
+
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1.042;
+    text-align: center;
+}
+
+.lead__subtitle {
+    margin: 0 auto 64px;
+    max-width: 640px;
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.lead__image {
+    margin: 0 auto 8px;
+}
+
+.lead__caption {
+    max-width: 158px;
     font-weight: 400;
     font-size: 10px;
-    line-height: 14px;
-    /* 1.4 */
+    line-height: 1.4;
     text-transform: uppercase;
 }
 
 /* ----------- */
-.description__title {
+.intro {
+    margin: 0 auto;
+    max-width: 690px;
+    padding: 92px 0;
+}
+
+.intro__title {
     font-weight: 900;
     font-size: 54px;
-    line-height: 58px;
-    /* 1.0741 */
+    line-height: 1.0741;
 }
 
-.description__text {
+.intro__text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 26.08px;
-    /* 1.63 */
+    line-height: 1.63;
 }
 
-.description__list {
+.intro__list {
     list-style: none;
+    max-width: 690px;
 }
 
-.description__line {
+.intro__point {}
+
+.intro__line {
     font-weight: 400;
     font-size: 12px;
-    line-height: 18px;
-    /* 1.5 */
+    line-height: 1.5;
 }
 
-.description__span-accent {
+.intro__span-accent {
     font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    /* 1.5 */
 }
 
 /* ----------- */
-.gallery {
+.photo-grid {
+    margin: 0 auto 92px;
+    max-width: 1184px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat minmax(auto-fit, 288px);
+    gap: 16px;
+
+    /*grid-template-rows: repeat(3, 1fr);*/
+
+
+}
+
+.photo-grid__image {
+    /* width: 100%; */
 }
 
 /* ----------- */
-.places {}
+.places {
+    margin: 0 auto 92px;
+    max-width: 984px;
+    display: flex;
+}
 
 .cards {
     list-style: none;
 }
 
-.cards__title {}
+.card {}
 
-.cards__url-heading {
+.card__item {}
+
+.card__image {}
+
+.cards__title {
+    max-width: 460px;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.06;
+}
+
+.card__url-heading {
+    max-width: 456px;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px;
-    line-height: 12px;
-    /* 1.0 */
+    line-height: 1.0;
 }
 
-.cards__url {
+.card__url {
+    max-width: 456px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
-    /* 1.22 */
+    line-height: 1.22;
 
 }
 
-.cards__text {}
+.card__text {}
 
 .cards__paragraph {
+    max-width: 484px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 29.34px;
-    /* 1.63 */
+    line-height: 1.63;
 }
 
 /* ----------- */
-.teaser {}
+.cover {
+    margin: 0 auto 92px;
+}
 
-.teaser__title {
+.cover__title {
+    max-width: 560px;
     font-weight: 900;
     font-size: 72px;
-    line-height: 76px;
-    /* 1.06 */
+    line-height: 1.06;
     text-align: center;
 }
 
-.teaser__subtitle {
+.cover__subtitle {
+    max-width: 360px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 22px;
-    /* 1.22 */
+    line-height: 1.22;
     text-align: center;
+}
 
+.cover__overlay {
+    max-width: 1184px;
+    background-image: url(./images/1280/teaser-1280.jpg);
 }
 
 /* ----------- */
 
-.footer {}
+.footer {
+    margin: 0 auto 24px;
+    list-style: none;
+    display: flex;
+}
 
 .footer__menu {
+    list-style: none;
+}
+
+.footer__links {
     list-style: none;
 }
 
 .footer__link {
     font-weight: 400;
     font-size: 16px;
-    line-height: 18px;
-    /* 1.125 */
+    line-height: 1.125;
 }
 
-.copyright-info {
+.footer__copyrigh {}
+
+.footer__copyright-info {
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
-    /* 1.143 */
+    line-height: 1.143;
     text-align: right;
 }
 
 /* -----gues who------ */
+/* основной блок код собираем по макету 1280 */
 
-@media screen and (max-width: 1280px) {
-    /* макет 1024 */
-}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
 
-
-@media screen and (max-width: 1024px) {
-
-    /* макет 768 */
     .header__logo {
-        position: absolute;
-        width: 142px;
-        height: 42px;
-        top: 16px;
-        left: 16px;
+        /* здесь всё также как в 1280 */
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* макет 320 */
+@media screen and (min-width: 768px) {
+    .header__logo {
+        left: 24px;
+    }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 320px) {
 
-    /* а какой макет использовать тут */
     .header__logo {
         position: absolute;
         width: 142px;

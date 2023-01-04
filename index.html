@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Путешествия по России</title>
+    <title>Путешествия по&nbsp;России</title>
     <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -14,24 +14,27 @@
 
     <header class="header">
         <img class="header__logo" src="./images/russia__logo.svg" alt="Логотип в форме карты России">
-        <h1 class="header__title">Путешествия по России</h1>
-        <p class="header__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-
         <nav>
-            <ul class="header__lang">
-                <li class="header__lang-link">Ru</li>
-                <li class="header__lang-link">En</li>
+            <ul class="header__lang-links">
+                <li class="header__lang-link text">Ru</li>
+                <li class="header__lang-link text">En</li>
             </ul>
         </nav>
-        <img class="header__image" src="" alt="Фото женщины спящей на нижней полке плацкарта">
-        <p class="header__caption">ваша полка — верхняя</p>
     </header>
 
     <main class="content">
 
-        <section class="description">
-            <h2 class="description__title">Чего мы там не видели?</h2>
-            <p class="description__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать,
+        <section class="lead">
+            <h1 class="lead__title text">Путешествия по России</h1>
+            <p class="lead__subtitle text">Настоящая страна не в выпусках новостей,&nbsp;а&nbsp;здесь.</p>
+            <img class="lead__image" src="./images/1280/cover-1280.jpg"
+                alt="Фото женщины спящей на нижней полке плацкарта">
+            <p class="lead__caption text">ваша полка — верхняя</p>
+        </section>
+
+        <section class="intro">
+            <h2 class="intro__title text">Чего мы там не видели?</h2>
+            <p class="intro__text text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать,
                 но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома,
                 не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми
                 лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно
@@ -40,48 +43,49 @@
                 их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали
                 и описали некоторые интересные места, достойные вашего отпуска.
             </p>
-            <ul class="description__list">
-                <li class="description__point">
-                    <p class="description__line"><span class="description__span-accent">Часовых поясов </span>11</p>
+            <ul class="intro__list">
+                <li class="intro__point">
+                    <p class="intro__line text"><span class="intro__span-accent">Часовых поясов </span>11</p>
                 </li>
-                <li class="description__point">
-                    <p class="description__line"><span class="description__span-accent">Объектов природного наследия
+                <li class="intro__point">
+                    <p class="intro__line text"><span class="intro__span-accent">Объектов природного наследия
                             ЮНЕСКО </span>12</p>
                 </li>
-                <li class="description__point">
-                    <p class="description__line"><span class="description__span-accent">Объектов культурного наследия
+                <li class="intro__point">
+                    <p class="intro__line text"><span class="intro__span-accent">Объектов культурного наследия
                             ЮНЕСКО </span>16</p>
                 </li>
-                <li class="description__point">
-                    <p class="description__line"><span class="description__span-accent">Природных заповедников
+                <li class="intro__point">
+                    <p class="intro__line text"><span class="intro__span-accent">Природных заповедников
                         </span>105
                     </p>
                 </li>
-                <li class="description__point">
-                    <p class="description__line"><span class="description__span-accent">Аэропортов </span>241</p>
+                <li class="intro__point">
+                    <p class="intro__line text"><span class="intro__span-accent">Аэропортов </span>241</p>
                 </li>
             </ul>
         </section>
 
-        <section class="gallery">
+        <section class="photo-grid">
             <div>
                 <!-- Нужен чтобы сделать оступы -->
-                <img class="gallery__image" src="./images/1280/gallery1-1280.jpg" alt="Фото из окна поезда"
+                <img class="photo-grid__image" src="./images/1280/gallery1-1280.jpg" alt="Фото из окна поезда"
                     data-type="">
-                <img class="gallery__image" src="./images/1280/gallery2-1280.jpg" alt="Горный пейзаж" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery3-1280.jpg" alt="Утренний пейзаж" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery4-1280.jpg" alt="Фото лес в тумане" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery5-1280.jpg"
+                <img class="photo-grid__image" src="./images/1280/gallery2-1280.jpg" alt="Горный пейзаж" data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery3-1280.jpg" alt="Утренний пейзаж" data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery4-1280.jpg" alt="Фото лес в тумане"
+                    data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery5-1280.jpg"
                     alt="Фото колеса машины на льду Байкала" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery6-1280.jpg" alt="Фото песчаного пляжа"
+                <img class="photo-grid__image" src="./images/1280/gallery6-1280.jpg" alt="Фото песчаного пляжа"
                     data-type="">
-                <img class="gallery__image" src="./images/1280/gallery7-1280.jpg" alt="Горный пейзаж" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery8-1280.jpg" alt="Фото дорожного знака"
+                <img class="photo-grid__image" src="./images/1280/gallery7-1280.jpg" alt="Горный пейзаж" data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery8-1280.jpg" alt="Фото дорожного знака"
                     data-type="">
-                <img class="gallery__image" src="./images/1280/gallery9-1280.jpg" alt="Горный пейзад" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery10-1280.jpg" alt="Фото горы" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery11-1280.jpg" alt="Горный пейзаж" data-type="">
-                <img class="gallery__image" src="./images/1280/gallery12-1280.jpg" alt="Фото горной цепи в тумане"
+                <img class="photo-grid__image" src="./images/1280/gallery9-1280.jpg" alt="Горный пейзад" data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery10-1280.jpg" alt="Фото горы" data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery11-1280.jpg" alt="Горный пейзаж" data-type="">
+                <img class="photo-grid__image" src="./images/1280/gallery12-1280.jpg" alt="Фото горной цепи в тумане"
                     data-type="">
             </div>
         </section>
@@ -91,18 +95,19 @@
             <!-- Если бы в этой секции был бы заголовок, то он и был бы h2. Но по макету его нет —— только заговки карточек. 
             Поэтому и размечаем их как h3, хоть у них более "тяжелое" начертание -->
             <ul class="cards">
-                <li class="cards__item">
-                    <img class="cards__image" src="./images/1280/cards1-1280.jpg" alt="">
-                    <h3 class="cards__title">Куршская коса</h3>
-                    <p class="cards__url-heading">url</p>
+                <li class="card">
+                    <img class="card__image" src="./images/1280/cards1-1280.jpg" alt="">
+                    <h3 class="card__title text">Куршская коса</h3>
+                    <p class="card__url-heading text">url</p>
                     <!-- в этот класс нужно добавить модификатор, чтобы изменить регистр -->
-                    <a class="cards__url" href="http://park-kosa.ru">park-kosa.ru</a>
-                    <div class="cards__text">
-                        <p class="cards__paragraph">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два водных
+                    <a class="card__url text" href="http://park-kosa.ru">park-kosa.ru</a>
+                    <div class="card__text">
+                        <p class="card__paragraph text">Здесь, посреди лесов и песчаных дюн, вы сможете увидеть два
+                            водных
                             горизонта — спокойного Куршского залива с одной стороны и подёрнутого рябью волн Балтийского
                             моря с другой. Уникальная природная зона на краю российского анклава.
                         </p>
-                        <p class="cards__paragraph">На этом Калининградская область не заканчивается. Для
+                        <p class="card__paragraph text">На этом Калининградская область не заканчивается. Для
                             путешественника
                             и исследователя там же по соседству — самая западная точка России, Балтийская коса, —
                             и немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест исключает
@@ -112,19 +117,19 @@
                     </div>
                 </li>
 
-                <li class="cards__item">
-                    <img class="cards__image" src="./images/1280/cards2-1280.jpg" alt="">
-                    <h3 class="cards__title">Кольский</h3>
-                    <p class="cards__url-heading">url</p>
+                <li class="card">
+                    <img class="card__image" src="./images/1280/cards2-1280.jpg" alt="">
+                    <h3 class="card__title text">Кольский</h3>
+                    <p class="card__url-heading text">url</p>
                     <!-- в этот класс нужно добавить модификатор, чтобы изменить регистр -->
-                    <a class="cards__url"
+                    <a class="card__url text"
                         href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy">National Geographic</a>
-                    <div class="cards__text">
-                        <p class="cards__paragraph">Почти весь полуостров находится за Полярным кругом.
+                    <div class="card__text">
+                        <p class="card__paragraph text">Почти весь полуостров находится за Полярным кругом.
                             Саамская тундра, от которой на юг — тайга, а на север — Ледовитый океан,
                             прикидывающийся Баренцевым морем.
                         </p>
-                        <p class="cards__paragraph">Возможно, вы смотрели Звягинцева и даже слышали
+                        <p class="card__paragraph text">Возможно, вы смотрели Звягинцева и даже слышали
                             историю арктического фестиваля в Териберке. Возможно, слово «Хибины» не осталось
                             под снегом школьных воспоминаний об уроках географии. Возможно, вы не интересовались
                             пронизывающей земную кору сверхглубокой скважиной, а от апатитов вас давно накрывает
@@ -132,51 +137,52 @@
                         </p>
                 </li>
 
-                <li class="cards__item">
-                    <img class="cards__image" src="./images/1280/cards3-1280.jpg" alt="">
-                    <h3 class="cards__title">Алтай</h3>
-                    <p class="cards__url-heading">url</p>
+                <li class="card">
+                    <img class="card__image" src="./images/1280/cards3-1280.jpg" alt="">
+                    <h3 class="card__title text">Алтай</h3>
+                    <p class="card__url-heading text">url</p>
                     <!-- в этот класс нужно добавить модификатор, чтобы изменить регистр -->
-                    <a class="cards__url" href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ
+                    <a class="card__url text" href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ
                     ">YouTube</a>
-                    <div class="cards__text">
-                        <p class="cards__paragraph">Алтай — одно из красивейших мест в России.
+                    <div class="card__text">
+                        <p class="card__paragraph text">Алтай — одно из красивейших мест в России.
                             В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны,
                             усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна,
                             сможете познакомиться с невидимым чудом здешних мест — горным воздухом.
                         </p>
-                        <p class="cards__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом.
+                        <p class="card__paragraph text">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом.
                             Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси,
                             над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы —
                             тоже обитатели Алтайского края.
                         </p>
                 </li>
 
-                <li class="cards__item">
-                    <img class="cards__image" src="./images/1280/cards4-1280.jpg" alt="">
-                    <h3 class="cards__title">Зимний Байкал</h3>
-                    <p class="cards__url-heading">url</p>
+                <li class="card">
+                    <img class="card__image" src="./images/1280/cards4-1280.jpg" alt="">
+                    <h3 class="card__title text">Зимний Байкал</h3>
+                    <p class="card__url-heading text">url</p>
                     <!-- в этот класс нужно добавить модификатор, чтобы изменить регистр -->
-                    <a class="cards__url" href="https://vk.com/baikalmile">https://vk.com/baikalmile</a>
-                    <div class="cards__text">
-                        <p class="cards__paragraph">Всем известен Байкал как крупнейшее озеро в мире. Многие также
+                    <a class="card__url text" href="https://vk.com/baikalmile">https://vk.com/baikalmile</a>
+                    <div class="card__text">
+                        <p class="card__paragraph text">Всем известен Байкал как крупнейшее озеро в мире. Многие также
                             знают, что это самый большой источник пресной воды и одно из красивейших мест в России.
                         </p>
-                        <p class="cards__paragraph">Конечно, это всё так. Но Байкал ещё идеальное место для соревнований
+                        <p class="card__paragraph text">Конечно, это всё так. Но Байкал ещё идеальное место
+                            для соревнований
                             по скийорингу. Это такой вид спорта, когда лыжник привязывает себя к мотоциклу, и тандем
                             старается развить как можно бóльшую скорость на льду. В марте 2019 года на фестивале
                             «Байкальская миля» был поставлен мировой рекорд — 197.011 км/ч.
                         </p>
                 </li>
 
-                <li class="cards__item">
-                    <img class="cards__image" src="./images/1280/cards5-1280.jpg" alt="">
-                    <h3 class="cards__title">Карелия</h3>
-                    <p class="cards__url-heading">url</p>
+                <li class="card">
+                    <img class="card__image" src="./images/1280/cards5-1280.jpg" alt="">
+                    <h3 class="card__title text">Карелия</h3>
+                    <p class="card__url-heading text">url</p>
                     <!-- в этот класс нужно добавить модификатор, чтобы изменить регистр -->
-                    <a class="cards__url" href="http://vodlozero.ru/">http://vodlozero.ru/</a>
-                    <div class="cards__text">
-                        <p class="cards__paragraph">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу
+                    <a class="card__url text" href="http://vodlozero.ru/">http://vodlozero.ru/</a>
+                    <div class="card__text">
+                        <p class="card__paragraph text">Сибирь заканчивается не на Урале, а в Карелии: образующая тайгу
                             сибирская лиственница не растёт западнее Водлозера. Зато здесь она вымахивает на 30 метров —
                             леса карельских национальных парков из-за непроходимых болот никогда не знали топора.
                             Некоторым соснам уже больше чем полтысячелетия. Прикоснитесь к живому существу, видевшему
@@ -189,27 +195,28 @@
             </ul>
         </section>
 
-        <section class="teaser">
-            <h2 class="teaser__title">До Байкала на «на собаках»</h2>
-            <p class="teaser__subtitle">По мотивам учебной темы о Транссибе — путешествие
+        <section class="cover">
+            <h2 class="cover__title text">До Байкала на «на собаках»</h2>
+            <p class="cover__subtitle text">По мотивам учебной темы о Транссибе — путешествие
                 от столицы до Байкала на электричках.</p>
-            <!-- Картинку ставим на фон всего блока section -->
+            <div class="cover__overlay"></div>
+            <!-- Картинку ставим на фон всего блока overlay -->
             <!-- Тут нужно сделать opacity по ховеру  -->
             <!-- https://stampsy.com/na-elektrichkakh-do-baikala -->
         </section>
 
         <section class="footer">
-            <nav class="">
-                <ul class="footer__menu">
-                    <li class=""><a class="footer__link" href="https://yandex.ru/maps">Карты</a></li>
-                    <li class=""><a class="footer__link" href="https://yandex.ru/pogoda">Погода</a></li>
-                    <li class=""><a class="footer__link" href="https://rasp.yandex.ru">Расписание</a></li>
-                    <li class=""><a class="footer__link" href="https://calendar.yandex.ru">Календарь</a></li>
-                    <li class=""><a class="footer__link" href="https://travel.yandex.ru">Путешествия</a></li>
+            <nav class="footer__menu">
+                <ul class="footer__links">
+                    <li class=""><a class="footer__link text" href="https://yandex.ru/maps">Карты</a></li>
+                    <li class=""><a class="footer__link text" href="https://yandex.ru/pogoda">Погода</a></li>
+                    <li class=""><a class="footer__link text" href="https://rasp.yandex.ru">Расписание</a></li>
+                    <li class=""><a class="footer__link text" href="https://calendar.yandex.ru">Календарь</a></li>
+                    <li class=""><a class="footer__link text" href="https://travel.yandex.ru">Путешествия</a></li>
                 </ul>
             </nav>
-            <div class="copyrigh">
-                <p class="copyright-info">&copy; 2023 Марк Зайцев</p>
+            <div class="footer__copyrigh">
+                <p class="footer__copyright-info text">&copy; 2023 Марк Зайцев</p>
             </div>
         </section>
     </main>
