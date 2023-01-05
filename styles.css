@@ -61,7 +61,6 @@
 .lead__subtitle {
     margin: 0 auto 64px;
     max-width: 640px;
-
     font-weight: 400;
     font-size: 30px;
     line-height: 1.2;
@@ -142,48 +141,61 @@
     margin: 0 auto 92px;
     max-width: 984px;
     display: flex;
+    flex-direction: column;
 }
 
-.cards {
-    list-style: none;
+.place {
+    display: grid;
+    column-gap: 40px;
+    grid-template-columns: 460px 1fr;
+    row-gap: 48px;
+    margin: 0 0 80px;
 }
 
-.card {}
-
-.card__item {}
-
-.card__image {}
-
-.cards__title {
+.place__title {
     max-width: 460px;
     font-weight: 900;
     font-size: 72px;
     line-height: 1.06;
+    margin: 0;
 }
 
-.card__url-heading {
+.place__website {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.place__url-heading {
     max-width: 456px;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.0;
+    color: #AAAAAA;
 }
 
-.card__url {
-    max-width: 456px;
+.place__url {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
 
 }
 
-.card__text {}
+.place__image {}
 
-.cards__paragraph {
+.place__paragraphs {}
+
+.place__paragraph {
     max-width: 484px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.63;
+    margin: 0 0 26px;
+}
+
+.place__paragraph:last-of-type {
+    margin: 0;
 }
 
 /* ----------- */
@@ -210,6 +222,8 @@
 .cover__overlay {
     max-width: 1184px;
     background-image: url(./images/1280/teaser-1280.jpg);
+    background-size: cover;
+    width: 100%;
 }
 
 /* ----------- */
@@ -218,25 +232,33 @@
     margin: 0 auto 24px;
     list-style: none;
     display: flex;
+    justify-content: space-between;
+
 }
 
 .footer__menu {
-    list-style: none;
+    margin: 0;
 }
 
 .footer__links {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__links:last-child {
+    margin: 0;
 }
 
 .footer__link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.125;
+    margin-right: 18px;
+    text-decoration: none;
 }
 
-.footer__copyrigh {}
-
-.footer__copyright-info {
+.footer__copyright {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.143;
