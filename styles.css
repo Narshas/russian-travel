@@ -15,18 +15,23 @@
     max-width: 1184px;
     padding: 28px 0 64px;
     display: flex;
+    position: relative;
+
+    justify-content: space-between;
 }
 
 .header__logo {
-    position: absolute;
     width: 176px;
     height: 52px;
     top: 28px;
     left: 48px;
+
 }
 
 .header__lang-links {
     list-style: none;
+    display: flex;
+    padding: 0;
 }
 
 .header__lang-link {
@@ -34,9 +39,12 @@
     font-size: 24px;
     line-height: 1.17;
     text-align: right;
+    margin-left: 18px;
+    text-decoration: none;
 }
 
-.header__lang-links:first-child {
+.header__lang-link_active {
+    margin: 0;
     text-decoration: underline;
 }
 
@@ -263,6 +271,7 @@
     font-size: 14px;
     line-height: 1.143;
     text-align: right;
+    margin: 0;
 }
 
 /* -----gues who------ */
@@ -276,18 +285,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    .header__logo {
-        left: 24px;
-    }
+    .header__logo {}
 }
 
 @media screen and (min-width: 320px) {
 
-    .header__logo {
-        position: absolute;
-        width: 142px;
-        height: 42px;
-        top: 16px;
-        left: 16px;
-    }
+    .header__logo {}
 }
