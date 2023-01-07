@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    src: local(./vendor)
+}
+
 .root {
     margin: 0 auto;
     max-width: 1280px;
     background-color: #2A2C2F;
+
     font-family: 'Inter';
 }
 
@@ -11,21 +18,17 @@
 
 /* ----------- */
 .header {
-    margin: 0 auto;
+    margin: 0 48px 56px;
     max-width: 1184px;
-    padding: 28px 0 64px;
+    padding: 28px 0 0;
     display: flex;
     position: relative;
-
     justify-content: space-between;
 }
 
 .header__logo {
     width: 176px;
     height: 52px;
-    top: 28px;
-    left: 48px;
-
 }
 
 .header__lang-links {
@@ -50,7 +53,7 @@
 
 /* ----------- */
 .lead {
-    margin: 0 auto;
+    margin: 0 auto 92px;
     max-width: 984px;
     display: flex;
     flex-direction: column;
@@ -59,7 +62,6 @@
 .lead__title {
     margin: 0 auto 32px;
     max-width: 720px;
-
     font-weight: 900;
     font-size: 96px;
     line-height: 1.04;
@@ -77,6 +79,7 @@
 
 .lead__image {
     margin: 0 auto 8px;
+    width: 100%;
 }
 
 .lead__caption {
@@ -89,9 +92,9 @@
 
 /* ----------- */
 .intro {
-    margin: 0 auto;
+    margin: 0 auto 92px;
     max-width: 984px;
-    padding: 92px 0;
+    padding: 0;
 }
 
 .intro__title {
@@ -132,16 +135,13 @@
     margin: 0 auto 92px;
     max-width: 1184px;
     display: grid;
-    grid-template-columns: repeat minmax(auto-fit, 288px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 16px;
-
-    /*grid-template-rows: repeat(3, 1fr);*/
-
-
 }
 
 .photo-grid__image {
-    /* width: 100%; */
+    width: 100%;
 }
 
 /* ----------- */
@@ -158,6 +158,10 @@
     grid-template-columns: 460px 1fr;
     row-gap: 48px;
     margin: 0 0 80px;
+}
+
+.place:last-of-type {
+    margin: 0;
 }
 
 .place__title {
@@ -207,11 +211,35 @@
 }
 
 /* ----------- */
+.link {
+    /* opacity: 1;
+    transition: opacity 1s linear; */
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+
+
+/* ----------- */
 .cover {
     margin: 0 auto 92px;
+    background-image: url(./images/1280/teaser-1280.jpg);
+    height: 740px;
+    max-width: 1184px;
+
+}
+
+.cover__link {
+    display: block;
+    padding: 245px 312px;
+    text-decoration: none;
+    background-color: rgba(42, 44, 47, 0.3);
 }
 
 .cover__title {
+    margin: 0 auto 32px;
     max-width: 560px;
     font-weight: 900;
     font-size: 72px;
@@ -220,6 +248,7 @@
 }
 
 .cover__subtitle {
+    margin: 0 auto;
     max-width: 360px;
     font-weight: 400;
     font-size: 18px;
@@ -227,11 +256,10 @@
     text-align: center;
 }
 
-.cover__overlay {
-    max-width: 1184px;
-    background-image: url(./images/1280/teaser-1280.jpg);
-    background-size: cover;
-    width: 100%;
+.cover__overlay {}
+
+.cover__link:hover {
+    background-color: rgba(42, 44, 47, 0.8);
 }
 
 /* ----------- */
@@ -277,18 +305,18 @@
 /* -----gues who------ */
 /* основной блок код собираем по макету 1280 */
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (max-width: 1024px) {
 
     .header__logo {
         /* здесь всё также как в 1280 */
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .header__logo {}
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
 
     .header__logo {}
 }
