@@ -1,7 +1,7 @@
 /* ----------- */
 .cover {
     margin: 0 auto;
-    background-image: url(../../images/1280/__backgroundL.jpg);
+    background-image: url(../../images/cover-trains.jpg);
     max-width: 1184px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +12,7 @@
 @media screen and (max-width: 1279px) {
     .cover {
         max-width: 1024px;
-        background-image: url(../../images/1024/__backgroundM.jpg);
+        /* background-image: url(../../images/1024/__backgroundM.jpg); */
     }
 
 }
@@ -20,7 +20,7 @@
 @media screen and (max-width: 1023px) {
     .cover {
         max-width: 768px;
-        background-image: url(../../images/768/__backgroundS.jpg);
+        /* background-image: url(../../images/768/__backgroundS.jpg); */
     }
 
 }
@@ -28,7 +28,7 @@
 @media screen and (max-width: 767px) {
     .cover {
         min-width: 320px;
-        background-image: url(../../images/320/__backgroundXS.jpg);
+        background-image: url(../../images/cover-trainsXS.jpg);
     }
 
 }
